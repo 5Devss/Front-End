@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+html{
+    height: 500vh;
+}
+.header{
+    transition: 0.5s ease-in-out;
+    position: fixed; 
+   width: 100%;
+   z-index: 20;
+   
+}
+.header.scroll{
+    background-color: white;
+   
+}
+
+.header.scroll .navbar{
+    padding: 15px 0;
+}
+
+.header.scroll .navbar h1{
+    color: black;
+}
+
+.header.scroll .navbar ul li a{
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    align-items: center;
+    width: 100%;
+    transition: 0.2s ;
+  
+}
+.navbar h1{
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.386) 0.1em 0.03em 0.3em;
+}
+.navbar ul{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.386) 0.1em 0.03em 0.3em;
+    font-size: 1.2rem;
+}
+
+.navbar-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-icons img{
+    cursor: pointer;
+    width: 24x;
+    height: 24px;
+    -webkit-filter: drop-shadow(3px 4px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222222ec);
+}
+
+
+.banner{
+    display: flex;
+   height: 100vh;
+}
+.banner div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+.banner img{
+    position: absolute;
+    width: 530px;
+    height: 400px;
+   
+}
+.banner .banner-text{
+    color: white;
+   background: rgb(48, 51, 54);
+   width:55% ;
+   padding: 20% 7%;
+   height: 100%;
+}
+
+.banner .banner-text h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.banner .banner-text p{
+    font-size: 1.2rem;
+}
+.banner .banner-text button{
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    border: white 1px solid;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.banner .banner-text button:hover{
+    background-color: rgb(0, 85, 255);
+    
+    border: rgb(0, 85, 255) 1px solid;
+}
+
+
+.banner .banner-imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: no-repeat center/cover url(assets/pexels-chikkku-thekkekara-12350402.jpg);
+
+}
+
+.banner .banner-imagem h1{
+    font-weight: 500;
+    color: white;
+    font-size: 3.8rem;
+}
+.banner .banner-imagem a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*MAIS POPULARES*/
+
+.mais-populares{
+    background-color: rgba(142, 138, 138, 0.66);
+    padding: 20px;
+}
+.title-mais-populares{
+    
+    font-size: 1.8rem;
+}
+
+.grid-mais-populares{
+    
+}
