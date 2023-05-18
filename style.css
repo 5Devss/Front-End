@@ -7,10 +7,6 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
-html{
-    height: 500vh;
-    
-}
 .header{
     transition: 0.5s ease-in-out;
     position: fixed; 
@@ -50,7 +46,6 @@ html{
     font-weight: 500;
     color: white;
     font-size: 2rem;
-    text-shadow: rgba(0, 0, 0, 0.386) 0.1em 0.03em 0.3em;
 }
 .navbar ul{
     gap: 30px;
@@ -63,7 +58,6 @@ html{
     font-weight: 500;
     text-decoration: none;
     color: white;
-    text-shadow: rgba(0, 0, 0, 0.386) 0.1em 0.03em 0.3em;
     font-size: 1.2rem;
 }
 
@@ -82,11 +76,12 @@ html{
 }
 
 .endereco{
-    margin: 2rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
     align-items: center;
     gap: 2rem;
     text-align: center;
+    background-color: #222;
     justify-content: center;
 }
 .endereco h3{
@@ -100,7 +95,122 @@ iframe{
 }
 
 
+/* CARDS*/
 
+
+.cards-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 5vh 0  30vh 0;
+}
+.title h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: rgb(255, 128, 0);
+    text-align: center;
+}
+.cards-flex .card-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 20rem;
+    border-bottom: 1px solid rgb(255, 128, 0);
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card img{
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    
+}
+
+.card-content{
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    bottom: 0;
+    border-bottom: none;
+    width: 100%;
+    height: 30%;
+    overflow-y: hidden;
+    padding: 15px;
+    padding-bottom: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translateY(65px);
+      /* edit here to change the height of the content box */
+   
+    transition: transform .45s;
+}
+
+.card:hover .card-content{
+    transform: translateY(0);
+    background-color: rgb(255, 128, 0);
+    color: white;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card-ver-mais{
+    font-size: 1.2rem;
+}
+.produtos{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.produto{
+    width: 20rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(255, 128, 0);
+}
+.produto:hover{
+    cursor: pointer;
+}
+button{
+    background-color: rgb(255, 128, 0);
+    border: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+}
+.produto h3{
+    font-weight: bolder;
+}
+.produto h4{
+    color:rgb(255, 128, 0);
+}
+.produto h4:hover{
+    border-bottom: solid 1px rgb(255, 128, 0);
+}
+.img-prod{
+    width: 100%;
+}
+.img-prod:hover{
+    transform: translateY(-10px);
+    transition: 0.40s ease;
+}
 
 
 
@@ -239,85 +349,5 @@ iframe{
     
 } */
 
-/* CARDS*/
-
-
-.cards-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin: 30vh 0;
-    
-}
-.cards-flex .title h1{
-    font-size: 3.5rem;
-    font-weight: 500;
-    color: rgb(255, 128, 0);
-
-}
-.cards-flex .card-section{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 100px;
-    flex-wrap: wrap;
-}
-
-.card{
-    position: relative;
-    width: 22vw;
-    min-width: 460px;
-   
-    border-bottom: 1px solid black;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.card img{
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 100%;
-    height: 90%;
-    
-}
-
-.card-content{
-    position: absolute;
-    left: 0;
-    padding: 5px;
-    bottom: 0;
-    border: 1px solid black;
-    border-bottom: none;
-    width: 100%;
-    height: 20%;
-    overflow-y: hidden;
-    padding: 15px;
-    padding-bottom: 20px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transform: translateY(65px);
-      /* edit here to change the height of the content box */
-   
-    transition: transform .45s;
-}
-
-.card:hover .card-content{
-    transform: translateY(0);
-    background-color: rgb(255, 128, 0);
-    color: white;
-}
-
-.card-title{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.card-ver-mais{
-    font-size: 1.2rem;
-}
 
 
