@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
+
 .header{
     transition: 0.5s ease-in-out;
     position: fixed; 
@@ -18,7 +19,7 @@
     background-color: white;
    
 }
-.header.scroll .navbar h1{
+.header.scroll .navbar a{
     color: black;
 }
 
@@ -38,13 +39,18 @@
 .navbar nav{
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
-.navbar h1{
+.navbar a{
     font-weight: 500;
     color: white;
     font-size: 2.5rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.navbar a:hover{
+    color: rgb(255, 128, 0);
 }
 .navbar ul{
     gap: 30px;
@@ -58,6 +64,7 @@
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
+    transition: 0.4s;
 }
 .navbar ul li a:hover{
     color: rgb(255, 128, 0);
@@ -200,6 +207,7 @@ iframe{
 
 
 .produtos{
+    margin-top: 200vh;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -211,7 +219,7 @@ iframe{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    border-bottom: 1px solid rgb(255, 128, 0);
+    border-bottom: 1px solid C;
 }
 .produto:hover{
     cursor: pointer;
@@ -356,68 +364,107 @@ button{
 }
 
 
-.aside-banner{
+/*MAIN NOVO PRODUTO*/
+.nova-moto{
+    overflow: hidden;
+    padding: 12vh 0;
+    background-color: rgba(0, 0, 0, 0.875);
     display: flex;
-    flex-direction: row-reverse;
-    height: 80vh;
-
-}
-
-.aside-image{
-    width: 40%;
-}
-.aside-image img{
-    height: 100%;
     width: 100%;
-    object-fit: fill;
+    flex-wrap: wrap-reverse;
 
 }
+@media screen and (max-width:1250px) {
+    .nova-moto{
+       
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .nova-moto .nova-moto-text article{
+        padding: 0%;
+        
+    }
+    .nova-moto-text{
+        width: 100%;
+    }
+    .nova-moto .nova-moto-text article h1{
+        font-size: 2.4rem;
+    }
+    .nova-moto .nova-moto-text article p{
+        font-size: 1.12rem;
+    }
+    .nova-moto .nova-moto-text article a{
+        font-size: 1.2rem;
+    }
+    .nova-moto-image{
+        width: 100%;
+    }
 
-.aside-article{
-    background-color: rgba(222, 222, 222, 0.395);
-    color: black;
+    .nova-moto-image figure img{
+       
+    }   
     
+}
+.nova-moto-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: unsafe;
     width: 60%;
-    padding: 0 15%;
+}
+.nova-moto article{
+    padding: 0 13% ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-}
 
-.aside-article h1{
-    font-size: 3.2rem;
-    font-weight: 500;
 }
-.aside-article p{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    font-weight: 500;
+.nova-moto article h1{
+    font-size: 3.8em;
+    font-weight: 600;
+    color: rgb(255, 128, 0);
 }
-.aside-article a{
-    font-size: 1.4rem;
-    text-decoration: none;
+.nova-moto article p{
+    font-size: 1.6rem;
     color: white;
-    padding: 15px 35px;
-    font-weight: 500;
+    
+}
+.nova-moto article a{
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
     border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: 0.4s;
+}
+.nova-moto article a:hover{
     background-color: rgb(255, 128, 0);
 }
-/* @media screen and (max-width: 1350px) {
-    .aside-banner{
-        flex-direction: column-reverse;
-        align-items: center;
-        height: 100vh;
-    }   
-    .aside-article{
-        width: 80%;
-        height: 50%;
-        padding: 0;
-    }
-    .aside-image{
-        width: 60%;
-        height: 50%;
-    }
 
-} */
+.nova-moto-image{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nova-moto-image figure img{
+    width: 35vw;
+    min-width: 540px;
+  
+    
+   
+    height: 60vh;
+}
+@media screen and (max-width:360px) {
+    .nova-moto-image figure img{
+     padding-left: 37px;
+        
+    }
+}
