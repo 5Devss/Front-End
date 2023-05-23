@@ -245,7 +245,7 @@
 /*MAIN NOVO PRODUTO*/
 .nova-moto{
     overflow: hidden;
-    padding: 7vh 0;
+    padding: 7vh 0 20vh 0;
     background-color: rgba(0, 0, 0, 0.875);
     display: flex;
     flex-direction: column;
@@ -272,12 +272,7 @@
     .nova-moto .nova-moto-text article a{
         font-size: 1.4rem;
     }
-    
 
-    .nova-moto-image figure img{
-       
-    }   
-    
 }
 .nova-moto-text{
     display: flex;
@@ -342,6 +337,9 @@
 
 
 
+
+
+
 /* DESCRIÇÃO MOTO NOVA */
 
 .desc-moto{
@@ -351,16 +349,93 @@
     justify-content: center;
 }
 .desc-moto-image{
-
-}
-
-.desc-moto-text{
-
-}
-
-.desc-moto-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
+.desc-moto-image img{
+    position: relative;
+    top: -170px;
+}
+
+
+.desc-moto-image div{
+    padding: 60px;
+    position: relative;
+    top: -170px;
+}
+
+.desc-moto-image div h1{
+   text-align: center;
+    color: rgb(255, 128, 0);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.desc-moto-image div p{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+@media screen and (max-width:700px) {
+    .desc-moto-image img{
+        width: 60vw;
+        top: -100px;
+        min-width: 300px;
+    }
+    .desc-moto-image div h1{
+        font-size:2.5rem ;
+    }
+}   
+
+.desc-moto-section{
+    padding: 5%;
+    position: relative;
+    top: -180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    grid-gap: 50px;
+    
+}
+
+@media screen and (max-width:1000px) {
+    .desc-moto-section{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media screen and (max-width:630px) {
+    .desc-moto-section{
+        grid-template-columns: 1fr  ;
+    }
+}
+.desc-moto-section .quadradinhos{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    gap: 10px;
+    padding: 25px 30px;
+    border: 3.5px solid rgb(255, 128, 0);
+    transition: 0.5s;
+}
+.desc-moto-section .quadradinhos:hover{
+    transform: translateY(-10px);
+}
+
+.desc-moto-section .quadradinhos p{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
 
 
 
@@ -368,7 +443,7 @@
 
 
 .produtos{
-    margin-top: 200vh;
+    
     display: flex;
     gap: 1rem;
     justify-content: center;

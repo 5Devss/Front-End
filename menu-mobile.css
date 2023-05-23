@@ -64,3 +64,16 @@ input:checked ~ label .hamburguer:after{
 
 
 
+.header.scroll .hamburguer{
+    background-color: black;
+}
+
+.header.scroll .hamburguer::before{
+    background-color: black;
+
+
+}
+
+.header.scroll .hamburguer:after{
+    background-color: black;
+}
