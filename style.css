@@ -431,9 +431,70 @@
 }
 
 
+/* ESCOLHA O SEU ESTILO */
 
+.main-estilo-motos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.main-estilo-motos section{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
 
+.estilo-motos-cards{
+    display: flex;
+    flex-direction: column;
+    overflow-y: visible;
+    align-items: center;
+    height: 60vh;
+    padding: 15px;
+    width: 20vw;
+    border: 3px solid black;
+}
+.estilo-motos-cards figure {
+    height: 50%;
+    
+    
+}
+.estilo-motos-cards figure img {
+    width: 30vw;
+    position: relative;
+    top: -100px;
+    padding-left: 20px;
+    
+}
 
+.estilo-moto-cards-text{
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.estilo-moto-cards-text h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+
+}
+.estilo-moto-cards-text div strong{
+    color:rgb(255, 128, 0) ;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.estilo-moto-cards-text a{
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 25px 35px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 128, 0);
+}
 
 
 
