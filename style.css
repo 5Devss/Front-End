@@ -21,6 +21,7 @@
 }
 .header.scroll .navbar a{
     color: black;
+    font-size: 1.8rem;
 }
 
 .header.scroll .navbar ul li a{
@@ -175,15 +176,10 @@
     overflow: hidden;
     cursor: pointer;
     transition: .5s;
-    min-height: 550px;
-    min-width: 400px;
+   min-height: 550px;
+    min-width: 260px;
 }
-@media screen and (max-width:520px) {
-    .card{
-        min-width: 300px;
-        height: 450px;
-    }
-}
+
 
 .card img{
     background-repeat: no-repeat;
@@ -233,7 +229,7 @@
 }
 
 .card-title{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 .card-ver-mais{
@@ -346,6 +342,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f4f4f4c8;
     justify-content: center;
 }
 .desc-moto-image{
@@ -391,7 +388,7 @@
 }   
 
 .desc-moto-section{
-    padding: 5%;
+    padding: 2%;
     position: relative;
     top: -180px;
     display: grid;
@@ -417,8 +414,11 @@
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
+    
+    text-align: center;
     gap: 10px;
-    padding: 25px 30px;
+    padding: 20px 0;
+    width:200px;
     border: 3.5px solid rgb(255, 128, 0);
     transition: 0.5s;
 }
@@ -434,43 +434,58 @@
 /* ESCOLHA O SEU ESTILO */
 
 .main-estilo-motos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 1%;
+    
+ 
+}
+.main-estilo-motos .title{
+    text-align: center;
+    color: rgb(255, 128, 0);
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 7vh;
  
 }
 .main-estilo-motos section{
     display: flex;
-    gap: 150px;
+    gap: 130px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .estilo-motos-cards{
+    background-color: #fcfcfc;
     display: flex;
     flex-direction: column;
-    overflow-y: visible;
+    overflow: hidden;
     align-items: center;
-    height: 60vh;
-    padding: 15px;
-    width: 20vw;
+   
+    
+    padding: 10px;
+    width: 18vw;
+    min-width: 265px;
     border: 3px solid black;
 }
 .estilo-motos-cards figure {
-    height: 50%;
-    
+ 
+  
     
 }
 .estilo-motos-cards figure img {
+
     width: 30vw;
+    min-width: 430px;
     position: relative;
-    top: -100px;
+    bottom: 30px;
     padding-left: 20px;
     
 }
 
 .estilo-moto-cards-text{
     text-align: center;
-    height: 50%;
+    position: relative;
+    top: -60px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -490,9 +505,11 @@
 .estilo-moto-cards-text a{
     font-size: 1.3rem;
     border-radius: 10px;
-    padding: 25px 35px;
+    padding: 15px 20px;
     text-decoration: none;
     color: white;
+    font-weight: 400;
+    transition: 0.5s;
     background-color: rgb(255, 128, 0);
 }
 
