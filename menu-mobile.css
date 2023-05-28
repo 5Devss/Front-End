@@ -16,20 +16,35 @@
     .menu-hamburguer{
         display: block;
     }
+
+    .header{
+        background-color: white;
+       
+    }
+
+    .header .navbar a{
+        color: black;
+        
+    }
+    
+    .header .navbar ul li a{
+        color: black;
+    }
     
     
 }
 .hamburguer{
     position: relative;
+    top: 6px;
     display: block;
-    background-color: white;
+    background-color: black;
     width: 40px;
     height: 3.2px;
     transition: .5s ease-in-out;
 }
 .hamburguer:before,
 .hamburguer:after{
-    background-color: white;
+    background-color: black;
     content: '';
     display: block;
     width: 100%;
@@ -64,7 +79,7 @@ input:checked ~ label .hamburguer:after{
 
 
 
-.header.scroll .hamburguer{
+/* .header.scroll .hamburguer{
     background-color: black;
 }
 
@@ -76,4 +91,45 @@ input:checked ~ label .hamburguer:after{
 
 .header.scroll .hamburguer:after{
     background-color: black;
+} */
+
+
+
+/*  */
+
+.navMobile{
+    margin-top: 9vh;
+    visibility: hidden;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    height: 100vh;
+    width: 0;
+    overflow-x: hidden;
+    transition: .5s ease-out;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.157);
+}
+.navMobile.active{
+    position: fixed;
+    width: 100%;
+    visibility: visible;
+}
+.navMobile ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 120px;
+    align-items: center;
+    
+    
+}
+
+.navMobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
 }
