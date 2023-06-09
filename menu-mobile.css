@@ -1,8 +1,6 @@
 .menu{
     display: none;
     position: relative;
-    
-    
 }
 .menu-hamburguer{
     display: none;
@@ -60,43 +58,22 @@
     
 }
 
-input{
+.input-menu-hamburguer{
     display: none;
 }
-input:checked ~ label .hamburguer{
+.input-menu-hamburguer:checked ~ label .hamburguer{
     transform: rotate(45deg);
 }
 
-input:checked ~ label .hamburguer:before{
+.input-menu-hamburguer:checked ~ label .hamburguer:before{
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked ~ label .hamburguer:after{
+.input-menu-hamburguer:checked ~ label .hamburguer:after{
     transform: rotate(90deg);
     bottom: 0;
 }
-
-
-
-/* .header.scroll .hamburguer{
-    background-color: black;
-}
-
-.header.scroll .hamburguer::before{
-    background-color: black;
-
-
-}
-
-.header.scroll .hamburguer:after{
-    background-color: black;
-} */
-
-
-
-/*  */
-
 .navMobile{
     margin-top: 9vh;
     visibility: hidden;
@@ -123,9 +100,7 @@ input:checked ~ label .hamburguer:after{
     flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 120px;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
 
 .navMobile ul li a{
