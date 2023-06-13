@@ -326,12 +326,7 @@ button {
     }
 
 }
-@media screen and (max-width:815px) {
-    .nova-moto-image figure img {
-        width: 95vw;
-        min-width: 490px;
-    }
-}
+
 @media screen and (max-width:360px) {
     .nova-moto-image figure img {
         padding-left: 37px;
@@ -520,7 +515,8 @@ button {
 /* CONTATO */
 
 .sobre-nos-img, iframe{
-    width: 40rem;
+    width: 40%;
+    max-width: 500px;
     height: 45vh;
     object-fit: cover;
     border: 0;
@@ -534,11 +530,13 @@ button {
     padding-bottom: 3rem;
 }
 .texto-sobre{
-    width: 30%;
+    max-width: 30%;
+    text-align: right;
+    font-size: 1.3rem;
 }
 .class-contato, .class-sobre-nos{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -647,4 +645,37 @@ footer .redesSociais div img:hover {
         padding: 10px;
         padding-top: 50px;
     }
+}
+@media (max-width:815px) {
+    .nova-moto-image figure img {
+        width: 95vw;
+        min-width: 490px;
+    }
+
+  
+.sobre-nos-img, iframe{
+    width: 80%;
+    max-width: 500px;
+    height: 45vh;
+    object-fit: cover;
+    border: 0;
+}
+
+.contato, .sobre-nos{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+.texto-sobre{
+    max-width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.class-contato, .class-sobre-nos{
+    display: flex;
+    flex-direction: column;
+}
+    
 }
