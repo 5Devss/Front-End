@@ -678,4 +678,9 @@ footer .redesSociais div img:hover {
     flex-direction: column;
 }
     
+.input{
+    width: 90%;
+    max-width: 400px;
+}
+
 }
