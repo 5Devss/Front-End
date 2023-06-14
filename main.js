@@ -1,14 +1,16 @@
 const header = document.querySelector('.header')
+
 window.addEventListener("scroll", () => {
     
     header.classList.toggle('scroll', window.scrollY>7)
 });
 
 const menuHambuguer = document.querySelector("#menu-hamburguer")
-const linkMobile = document.querySelectorAll("#linkM")
+
 menuHambuguer.addEventListener("click", () => {
+
     let nav = document.querySelector(".navMobile")
-   
+    menuHambuguer.classList.toggle("hamburguerActive")
     nav.classList.toggle('active')
 })
 
