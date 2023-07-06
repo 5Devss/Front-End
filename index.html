@@ -10,41 +10,22 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu-mobile.css">
-    <title>Eletric Rider</title>
+    <title>Pet Zen</title>
 </head>
 
 <body>
     <header class="header ">
         <div>
             <nav class="navbar">
-                <a href="#" id="logo">Eletric Rider</a>
+                <img class="logo" src="assetsPet/LogoExtenso.png" alt="">
                 <nav>
                     <ul>
-                        <li><a href="#cards-flex">Destaques</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cards-flex">Serviços</a></li>
                         <li><a href="#sobre-nos">Sobre</a></li>
-                        <li><a href="#desc-moto">Voltz</a></li>
+                        <li><a href="#footer">Contato</a></li>
                     </ul>
-                    <ul class="navbar-icons">
-                        <li> <a href="">
-                                <span class="material-symbols-outlined">
-                                    search
-                                </span>
-                            </a></li>
-                        <li>
-                            <a href="">
-                                <span class="material-symbols-outlined">
-                                    login
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="material-symbols-outlined">
-                                    shopping_cart
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+                    
                 </nav>
 
                 <div class="menu-hamburguer">
@@ -64,20 +45,13 @@
 
         <h2>Menu</h2>
 
-       <ul>
-            <li> <a href="">Login</a></li>
-            <li>
-                <a href="">Carrinho</a>
-            </li>
-            <li>
-                <a href="">Pesquisa</a>
-            </li>
-        </ul>
-
         <ul>
-            <li><a onclick="fecharNav()" href="#cards-flex">Destaques</a></li>
+            <li><a onclick="fecharNav()" href="#">Home</a></li>
+            <li><a onclick="fecharNav()" href="daycare.html">Day Care</a></li>
+            <li><a onclick="fecharNav()" href="hospedagem.html">Hospedagem</a></li>
+            <li><a onclick="fecharNav()" href="#cards-flex">Serviços</a></li>
             <li><a onclick="fecharNav()" href="#sobre-nos">Sobre</a></li>
-            <li><a onclick="fecharNav()" href="#desc-moto">Voltz</a></li>
+            <li><a onclick="fecharNav()" href="#footer">Contato</a></li>
         </ul>
 
 
@@ -89,8 +63,8 @@
     <section class="banner" id="banner">
 
         <article class="banner-imagem">
-            <h1>Explore a nova era da liberdade elétrica!</h1>
-            <a href="">Compre Agora</a>
+            <h1>O refúgio do seu pet!</h1>
+            <a href="#sobre-nos">Conheça-nos</a>
 
         </article>
 
@@ -98,93 +72,44 @@
 
     <section class="cards-flex" id="cards-flex">
         <div>
-            <h1 class="title">DESTAQUES</h1>
+            <h1 class="title">Serviços</h1>
         </div>
         <section class="card-section" data-aos="fade-up" data-aos-duration="500">
-            <div class="card">
-                <img src="assets/acessorios.jpg" alt="">
+            <div  class="card">
+                <a href="daycare.html">
+                    <img src="assetsPet/DAYCAREPT1.jpg" alt="">
+                </a>
+               <a href="daycare.html">
                 <div class="card-content">
-                    <span class="card-title">PEÇAS E ACESSÓRIOS</span>
+                    <span class="card-title">Day Care</span>
                     <span class="card-ver-mais">Ver mais</span>
                 </div>
+               </a>
             </div>
             <div class="card">
-                <img src="assets/roupas.jpg" alt="">
+              <a href="hospedagem.html">
+                <img src="assetsPet/Hospedagemm.jpg" alt="">
+              </a>
+               <a href="hospedagem.html">
                 <div class="card-content">
-                    <span class="card-title">ROUPAS PARA PILOTAR</span>
+                    <span class="card-title">Hospedagem</span>
                     <span class="card-ver-mais">Ver mais</span>
                 </div>
-            </div>
-            <div class="card">
-                <img src="assets/motos.jpg" alt="">
-                <div class="card-content">
-                    <span class="card-title">MOTOS </span>
-                    <span class="card-ver-mais">Ver mais</span>
-                </div>
+               </a>
             </div>
         </section>
     </section>
 
-    <!-- MAIN NOVA MOTO  -->
+    
 
-    <main class="nova-moto" id="desc-moto">
-        <section class="nova-moto-image">
-            <figure>
-                <img data-aos="slide-left" data-aos-duration="1500" src="assets/fotoVoltz02-removebg.png" alt="">
-            </figure>
-        </section>
-        <section class="nova-moto-text">
-            <article>
-                <h1>Conheça a Voltz a nova tendência motosport</h1>
-                <p>Voltz é uma nova linha de motos elétricas que busca oferecer uma solução moderna, ecológica e eficiente para a mobilidade urbana. A moto elétrica Voltz é projetada com um estilo contemporâneo e atrativo, combinando design elegante com tecnologia avançada.</p>
-                <a href="">Acessar</a>
-            </article>
-        </section>
-
-    </main>
-
-    <!-- DESCRIÇÃO MOTO -->
-
-    <article class="desc-moto">
-        <figcaption class="desc-moto-image">
-            <img data-aos="slide-right" data-aos-duration="1500"
-                src="assets/D_NQ_NP_769425-MLB45317127968_032021-F-removebg-preview.png" alt="">
-            <div>
-                <h1>Maior Performace na hora de pilotar</h1>
-                <p>Descubra o melhor da Voltz</p>
-            </div>
-        </figcaption>
-
-        <section class="desc-moto-section">
-            <div class="quadradinhos">
-                <img src="icons/bio.png" alt="">
-                <p>Sem Poluentes</p>
-            </div>
-            <div class="quadradinhos">
-                <img src="icons/charging-battery.png" alt="">
-                <p>Muita Bateria</p>
-            </div>
-            <div class="quadradinhos">
-                <img src="icons/piggy-bank.png" alt="">
-                <p>Economia</p>
-            </div>
-            <div class="quadradinhos">
-                <img src="icons/verified.png" alt="">
-                <p>Segurança</p>
-            </div>
-        </section>
-
-    </article>
-
-
-    <main class="parallax-banner">
+     <main class="parallax-banner">
         <section class="parallax background">
 
         </section>
 
     </main>
-    <br><br><br>
-    <main class="main-estilo-motos" id="main-estilo-motos">
+    <br><br><br> 
+    <!-- <main class="main-estilo-motos" id="main-estilo-motos">
 
         <h1 class="title">Escolha o seu estilo!</h1>
         <section>
@@ -228,32 +153,39 @@
                 </article>
             </article>
         </section>
-    </main>
+    </main> -->
 
-    <br><br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br><br> -->
+   
 
-
-    <section class="sobre-nos"id="sobre-nos">
+    <section class="sobre-nos" id="sobre-nos" >
         <div class="class-sobre-nos" >
             
-            <div class="texto-sobre">
-                <h1 class="title">Sobre Nós</h1>
-                <p>Bem-vindo à Eletric Rider a loja líder em motos elétricas! Ao entrar em nossa loja, você será imediatamente envolvido por uma atmosfera moderna e sustentável. A Eletric Rider é um paraíso para entusiastas de motos elétricas</p>
+            <div class="texto-sobre" >
+                <h1 class="title">Sobre</h1>
+                <p>Somos a Pet Zen, uma creche de cães dedicada a oferecer um ambiente espaçoso, amoroso e seguro para os nossos hóspedes de quatro patas. Aqui, o bem-estar e a felicidade dos cães estão no centro de tudo o que fazemos.Nossa equipe dedicada está comprometida em proporcionar o melhor cuidado para os cães, com muito carinho, atenção e atividades emocionantes. Sabemos o quanto esses companheiros de quatro patas são importantes para você. Estamos aqui para oferecer um ambiente acolhedor e tranquilo, onde os cães se sentirão amados e protegidos.</p>
             </div>
-            <img src="assets/R.jpg" alt="" CLASS="sobre-nos-img">
+            <img src="assetsPet/Galeria.jpg" alt="" class="sobre-nos-img">
         </div>
 
     </section>
     <main class="contato">
+
+        <div>
+            <h1 class="title">Mande um E-mail</h1>
+        </div>
+
         <div class="class-contato">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.7929203368017!2d7.373853376268603!3d47.04429412663828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e3cb9cbfe3aa1%3A0x5179ca36457df5b7!2zQmFjaHdlZyAxMCwgMzA1NCBTY2jDvHBmZW4sIFN1w63Dp2E!5e0!3m2!1spt-BR!2sbr!4v1685647559787!5m2!1spt-BR!2sbr"
                 allowfullscreen=""  frameborder="0" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form class="Contato" id="Contato">
+            <form class="Contato" id="Contato" onsubmit="submitForm(event)">
                 <div class="inputs">
-                    <input type="text" class="input" placeholder="Envie-nos uma mensagem" />
-                    <input type="email" id="teste" class="input" placeholder="E-mail" />
+                    <input type="email" id="teste" class="input" placeholder="E-mail" required/>
+                    
+                    <input type="text" required id="teste" class="input" placeholder="Número de Telefone" />
+                    <textarea required name="" placeholder="Escreva uma mensagem:" id="" cols="30" rows="10"></textarea>
                 </div>
                 <button>ENVIAR</button>
             </form>
@@ -307,47 +239,58 @@
         </div>
     </section> -->
 
-    <footer>
+    <footer id="footer">
 
         <div>
-            <h1>Eletric Rider</h1>
+            
+            <img class="logo" src="assetsPet/Logo.png" alt="">
         </div>
         <div class="listFooter">
             <h2>Atendimento</h2>
             <ul>
-                <li><a href="">Fale conosco</a></li>
+                <li><a target="_blank" href="https://wa.me/5511949995555?text=Olá Pet Zen Gostaria de saber mais">Fale conosco</a></li>
                 <li><a href="">Contato</a></li>
-                <li><a href="">Endereços</a></li>
+               
             </ul>
         </div>
         <div class="listFooter">
             <h2>Informações</h2>
             <ul>
-                <li><a href="">Perguntas frequentes</a></li>
-                <li><a href="">Aviso de privacidade</a></li>
-                <li><a href="">Termos e condições</a></li>
+                <li><a href="">casapetzen@gmail.com</a></li>
+                <li><a href="">(11)98378-7869</a></li>
+                <li><a href="">Rua Aurelia, 891, Lapa, São Paulo, SP</a></li>
             </ul>
         </div>
-        <div class="listFooter">
-            <h2>Institucional</h2>
-            <ul>
-                <li><a href="">Multimarcas</a></li>
-                <li><a href="">Imprensa</a></li>
-            </ul>
-        </div>
+        
         <div class="redesSociais">
             <div>
-                <img src="icons/facebook (1).png" alt="">
+                <a target="_blank" href="https://www.facebook.com/casapetzen">
+                    <img src="icons/facebook (1).png" alt="">
+                </a>
             </div>
             <div>
-                <img src="icons/instagram (1).png" alt="">
+                <a target="_blank" href="https://www.instagram.com/casapetzen/">
+                    <img src="icons/instagram (1).png" alt="">
+                </a>
             </div>
             <div>
-                <img src="icons/twitter.png" alt="">
+               <a target="_blank" href="https://www.tiktok.com/@casapetzen">
+                <img src="icons/tiktok.png" alt="">
+               </a>
             </div>
         </div>
 
+        
+
     </footer>
+
+    <div class="madeby">
+        <p>© 2023 Pet Zen. Todos os direitos reservados.</p>
+        <p>
+            Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-sella-588390273/">Guilherme Sella</a>
+            e <a href="https://www.linkedin.com/in/raphael-fran%C3%A7a-simonetti-76b625249/">Raphael Simonetti</a>
+        </p>
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
